@@ -21,12 +21,13 @@ dotenv.config({})
 app.use(bodyParser.json())
 
 app.use(express.urlencoded({extended:true}))
-const corsOptions={
-    origin:'https://cseb-yaps.onrender.com/',
-    credentials:true ,
-}
+// const corsOptions={
+//     origin:'https://cseb-yaps.onrender.com',
+//     credentials:true ,
+// }
 app.use(cors({
-    origin:'https://cseb-yaps.onrender.com/',
+    origin:'https://cseb-yaps.onrender.com',
+    methods:['GET','POST'],
     credentials: true
 }))
   
