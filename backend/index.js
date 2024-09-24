@@ -22,11 +22,11 @@ app.use(bodyParser.json())
 
 app.use(express.urlencoded({extended:true}))
 const corsOptions={
-    origin:'http://localhost:3000',
+    origin:'https://cseb-yaps.onrender.com/',
     credentials:true ,
 }
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:'https://cseb-yaps.onrender.com/',
     credentials: true
 }))
   
