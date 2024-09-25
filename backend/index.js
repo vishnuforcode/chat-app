@@ -12,7 +12,7 @@ import cors from 'cors'
 // const router = require('./routes/userroute')
 import {app ,server} from "./socket/socket.js"
 import path from 'path';
-import { log } from 'console'
+
 app.use(cookieparser());
 dotenv.config({}) 
 
@@ -26,8 +26,8 @@ app.use(express.urlencoded({extended:true}))
 //     credentials:true ,
 // }
 app.use(cors({
-    origin:"*",
-    methods:['GET','POST'],
+    origin:"https://cseb-yaps.onrender.com",
+   
     credentials: true,
 }))
   
@@ -77,13 +77,14 @@ const __dirname = path.resolve() ;
 // routes 
 
 
+
 app.use("/api/v1/user" , userroute )
 app.use("/api/v1/message" ,messageroute)
 // http://localhost:3000/api/v1/user/register
 
 app.use(express.static(path.join(__dirname , "/frontend/build"))) ;
 
-app.get("*" , (req,res)=>{
+app.get("*" , (req ,res)=>{
     res.sendFile(path.resolve(__dirname , "frontend" , "build" , "index.html"))
 })
 

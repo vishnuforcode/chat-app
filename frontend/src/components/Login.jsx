@@ -27,7 +27,7 @@ const dispatch = useDispatch()
       
           navigate("/")
         
-          console.log(res)
+          // console.log(res)
       dispatch(setAuthUser(res.data))
       
       
