@@ -11,6 +11,7 @@ const UseGetotherUsers = () => {
     useEffect(() => {
         const fetchOtheruser = async () => {
             try {
+                
                 axios.defaults.withCredentials = true;
 
                 const res = await axios.get('http://localhost:8000/api/v1/user/');

@@ -28,7 +28,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors({
     origin:'https://cseb-yaps.onrender.com',
     methods:['GET','POST'],
-    credentials: true
+    credentials: true,
 }))
   
 
