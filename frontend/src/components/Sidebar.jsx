@@ -23,7 +23,7 @@ const Sidebar = () => {
 
     const logouthandeler = async () => {
         try {
-            const res = await axios.get('https://backend-for-chat-app-9sgj.onrender.com/api/v1/user/logout')
+            const res = await axios.get('http://localhost:8000/api/v1/user/logout')
             navigate("/login")
             toast.success(res.data.message);
             dispatch(setAuthUser(null));

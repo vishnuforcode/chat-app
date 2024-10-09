@@ -21,7 +21,7 @@ function Register() {
         e.preventDefault();
 
         try {
-            const res = await axios.post('https://backend-for-chat-app-9sgj.onrender.com/api/v1/user/register', user, {
+            const res = await axios.post('http://localhost:8000/api/v1/user/register', user, {
                 headers: {
                     "Content-Type": 'application/json'
                 },

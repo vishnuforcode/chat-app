@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     if (authUser) {
-      const socketio = io("https://backend-for-chat-app-9sgj.onrender.com", {
+      const socketio = io("http://localhost:8000", {
         query: {
           userid: authUser._id
         }
