@@ -23,7 +23,7 @@ const Sendmessage = () => {
     // alert(message);
 
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/message/send/${selecteduser?._id}`, { message }, {
+      const res = await axios.post(`https://backend-for-chat-app-9sgj.onrender.com/api/v1/message/send/${selecteduser?._id}`, { message }, {
         headers: {
           "Content-Type": 'application/json'
         },
