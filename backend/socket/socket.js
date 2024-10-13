@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://cseb-yaps-i61i.onrender.com/"],
+    origin: [`${process.env.Api_url}`],
     methods: ["GET", "POST"],
   },
   transports: ["websocket", "polling"],

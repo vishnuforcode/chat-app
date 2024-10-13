@@ -23,7 +23,7 @@ const Sidebar = () => {
 
     const logouthandeler = async () => {
         try {
-            const res = await axios.get('https://yaps-u6up.onrender.com/api/v1/user/logout')
+            const res = await axios.get(`${process.env.Api_url}/api/v1/user/logout`)
             navigate("/login")
             toast.success(res.data.message);
             dispatch(setAuthUser(null));

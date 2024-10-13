@@ -18,7 +18,8 @@ const dispatch = useDispatch()
   const onsubmithandeler = async  (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://yaps-u6up.onrender.com/api/v1/user/login', user, {
+      const apiurl = process.env.Api_url 
+      const res = await axios.post(`${apiurl}/api/v1/user/login`, user, {
           headers: {
               "Content-Type": 'application/json'
           },
