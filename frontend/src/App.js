@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     if (authUser) {
-      const socketio = io("http://localhost:8000", {
+      const socketio = io("https://cseb-yaps-ftyb.onrender.com", {
         query: {
           userid: authUser._id
         }
