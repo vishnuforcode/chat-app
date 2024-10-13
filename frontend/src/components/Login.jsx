@@ -19,7 +19,7 @@ const dispatch = useDispatch()
     e.preventDefault();
     try {
       const apiurl = process.env.Api_url 
-      const res = await axios.post(`${apiurl}/api/v1/user/login`, user, {
+      const res = await axios.post('https://cseb-yaps-ftyb.onrender.com/api/v1/user/login', user, {
           headers: {
               "Content-Type": 'application/json'
           },

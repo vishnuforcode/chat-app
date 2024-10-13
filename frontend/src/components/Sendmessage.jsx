@@ -23,7 +23,7 @@ const Sendmessage = () => {
     // alert(message);
 
     try {
-      const res = await axios.post(`${process.env.Api_url}/api/v1/message/send/${selecteduser?._id}`, { message }, {
+      const res = await axios.post(`https://cseb-yaps-ftyb.onrender.com/api/v1/message/send/${selecteduser?._id}`, { message }, {
         headers: {
           "Content-Type": 'application/json'
         },

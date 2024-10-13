@@ -16,7 +16,7 @@ const UsegetMessages = () => {
             try {
 
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`${process.env.Api_url}/api/v1/message/${selecteduser?._id}`)
+                const res = await axios.get(`https://cseb-yaps-ftyb.onrender.com/api/v1/message/${selecteduser?._id}`)
                 // console.log(res.data) ;
 
                 dispatch(setMessages(res.data));

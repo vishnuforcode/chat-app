@@ -14,7 +14,7 @@ const UseGetotherUsers = () => {
                 
                 axios.defaults.withCredentials = true;
 
-                const res = await axios.get(`${process.env.Api_url}/api/v1/user/`);
+                const res = await axios.get('https://cseb-yaps-ftyb.onrender.com/api/v1/user/');
 
                 // console.log(res);
                 // store

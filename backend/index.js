@@ -27,7 +27,7 @@ app.use(express.urlencoded({extended:true}))
 // }
 app.use(cors({
     // origin:"https://cseb-yaps.onrender.com",
-    origin:`${process.env.Api_url}`,
+    origin:'https://cseb-yaps-ftyb.onrender.com',
     
     credentials: true,
 }))

@@ -21,7 +21,7 @@ function Register() {
         e.preventDefault();
 
         try {
-            const res = await axios.post(`${process.env.Api_url}/api/v1/user/register`, user, {
+            const res = await axios.post('https://cseb-yaps-ftyb.onrender.com/api/v1/user/register', user, {
                 headers: {
                     "Content-Type": 'application/json'
                 },
