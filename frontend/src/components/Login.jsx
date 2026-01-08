@@ -83,6 +83,11 @@ const dispatch = useDispatch()
             <button type='submit' className='btn btn-block btn-sm mt-2 border border-slate-700'>
               Login
             </button>
+            <div className="example mt-2 d-flex text-center " style={{color:'black'}}>
+             <p >Sample Login</p>
+              UserName : h | 
+              Password : h
+            </div>
           </div>
 
 
